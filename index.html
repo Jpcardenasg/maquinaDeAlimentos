@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquina de Alimentoss</title>
-    <script type="module" src="js/main.js" defer></script>
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <a href="http://progra.usm.cl/apunte/ejercicios/1/maquina-alimentos.html">Enunciado</a>
+    <main>
+        <header>
+            <h1>Máquina de alimentos</h1>
+            <p>Le presentamos nuestros productos, acontinuación escoja el producto que desea adquirir</p>
+        </header>
+        <section id="products">
+            <div class="card">
+                <figure class="image">
+                    <img src="storage/images/empanda.jpg" alt="Empanada">
+                    <figcaption><span>Empanada</span><span>$270</span></figcaption>
+                </figure>
+                <div class="buy-button">
+                    <button onclick="comprar(270)">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="image">
+                    <img src="storage/images/pastel-de-carne.jpg" alt="Pastel de carne">
+                    <figcaption><span>Pastel de Carne</span><span>$340</span></figcaption>
+                </figure>
+                <div class="buy-button">
+                    <button onclick="comprar(340)">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="image">
+                    <img src="storage/images/pizza-napolitana.webp" alt="Pizza Napolitana">
+                    <figcaption><span>Pizza Napolitana</span><span>$390</span></figcaption>
+                </figure>
+                <div class="buy-button">
+                    <button onclick="comprar(390)">Comprar</button>
+                </div>
+            </div>
+        </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <button class="close-btn" onclick="cerrarModal()">x</button>
+              <div id="modalContent"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><a href="http://progra.usm.cl/apunte/ejercicios/1/maquina-alimentos.html">Aquí</a>
+            puede encontrar las especificaciones del problema
+        </p>
+    </footer>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
